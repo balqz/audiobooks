@@ -14,8 +14,8 @@ class AddForeignKeysToPurchaseTable extends Migration {
 	{
 		Schema::table('purchase', function(Blueprint $table)
 		{
-			$table->foreign('id_audiobook', 'purchase.id_audiobook')->references('id')->on('audiobook')->onUpdate('NO ACTION')->onDelete('NO ACTION');
-			$table->foreign('id_user', 'purchase.id_user')->references('id')->on('user')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('audiobook_id', 'purchase.id_audiobook')->references('id')->on('audiobook')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('user_id', 'purchase.id_user')->references('id')->on('user')->onUpdate('NO ACTION')->onDelete('NO ACTION');
 		});
 	}
 

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCategoryTable extends Migration {
+class CreateBundleTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,17 @@ class CreateCategoryTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('category', function(Blueprint $table)
+		Schema::create('bundle', function(Blueprint $table)
 		{
 			$table->integer('id', true);
-			$table->string('title', 50);
+			$table->string('title', 100)->nullable();
 			$table->string('subtitle', 50)->nullable();
 			$table->string('about', 500)->nullable();
-			$table->dateTime('createdAt');
-			$table->dateTime('updatedAt');
-			$table->integer('id_parent')->nullable()->index('id_parent_idx');
+			$table->float('price', 10, 0)->default(0);
+			$table->string('picture_url', 500)->nullable();
+			$table->integer('visibility')->default(0);
+			$table->timestamps();
+			$table->softDeletes();
 		});
 	}
 
@@ -32,7 +34,7 @@ class CreateCategoryTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('category');
+		Schema::drop('bundle');
 	}
 
 }

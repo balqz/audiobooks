@@ -39,4 +39,5 @@ Route::group(array('prefix' => 'api/v1'), function()
 		Route::resource('collections', 'ColelctionsController');
 		Route::resource('purchases', 'PurchasesController');
 		Route::resource('users', 'UsersController');
+		Route::resource('auth', 'AuthenticateController');
 	});

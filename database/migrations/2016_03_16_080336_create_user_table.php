@@ -18,8 +18,13 @@ class CreateUserTable extends Migration {
 			$table->string('email', 45)->unique('email_UNIQUE');
 			$table->string('password', 500)->nullable();
 			$table->string('name', 45)->nullable();
-			$table->dateTime('createdAt');
-			$table->dateTime('updatedAt');
+			$table->dateTime('birth_date_at')->nullable();
+			$table->string('phone_number', 20)->nullable();
+			$table->string('gender', 10)->nullable();
+			$table->string('relationship_status', 45)->nullable();
+			$table->string('location', 100)->nullable();
+			$table->timestamps();
+			$table->softDeletes();
 		});
 	}
 

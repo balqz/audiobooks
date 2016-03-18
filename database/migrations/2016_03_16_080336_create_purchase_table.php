@@ -16,10 +16,10 @@ class CreatePurchaseTable extends Migration {
 		{
 			$table->integer('id', true);
 			$table->float('price', 10, 0);
-			$table->dateTime('createdAt');
-			$table->dateTime('updatedAt');
-			$table->integer('id_audiobook')->nullable()->index('id_audiobook_idx');
-			$table->integer('id_user')->nullable()->index('purchase.id_user_idx');
+			$table->timestamps();
+			$table->softDeletes();
+			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');
+			$table->integer('user_id')->nullable()->index('purchase.id_user_idx');
 		});
 	}
 

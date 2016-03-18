@@ -14,8 +14,8 @@ class AddForeignKeysToWishlistTable extends Migration {
 	{
 		Schema::table('wishlist', function(Blueprint $table)
 		{
-			$table->foreign('id_user', 'wishilist.id_user')->references('id')->on('user')->onUpdate('NO ACTION')->onDelete('NO ACTION');
-			$table->foreign('id_audiobook', 'wishlist.id_audiobook')->references('id')->on('audiobook')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('user_id', 'wishilist.id_user')->references('id')->on('user')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('audiobook_id', 'wishlist.id_audiobook')->references('id')->on('audiobook')->onUpdate('NO ACTION')->onDelete('NO ACTION');
 		});
 	}
 

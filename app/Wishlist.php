@@ -2,9 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Bundle extends Model {
-
-	protected $table = 'audiobook_bundle';
+class Wishlist extends Model {
 
 	protected $fillable = [];
 

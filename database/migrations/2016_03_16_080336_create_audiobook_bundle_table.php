@@ -15,8 +15,10 @@ class CreateAudiobookBundleTable extends Migration {
 		Schema::create('audiobook_bundle', function(Blueprint $table)
 		{
 			$table->integer('id', true);
-			$table->integer('id_audiobook')->nullable()->index('id_audiobook_idx');
-			$table->integer('id_bundle')->nullable()->index('id_bundle_idx');
+			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');
+			$table->integer('bundle_id')->nullable()->index('id_bundle_idx');
+			$table->timestamps();
+			$table->softDeletes();
 		});
 	}
 

@@ -14,7 +14,8 @@ class AddForeignKeysToAudiobookTable extends Migration {
 	{
 		Schema::table('audiobook', function(Blueprint $table)
 		{
-			$table->foreign('id_category', 'audiobook.id_category')->references('id')->on('category')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('category_id', 'audiobook.id_category')->references('id')->on('category')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('publisher_id', 'audiobook.id_publisher')->references('id')->on('admin')->onUpdate('NO ACTION')->onDelete('NO ACTION');
 		});
 	}
 
@@ -29,6 +30,7 @@ class AddForeignKeysToAudiobookTable extends Migration {
 		Schema::table('audiobook', function(Blueprint $table)
 		{
 			$table->dropForeign('audiobook.id_category');
+			$table->dropForeign('audiobook.id_publisher');
 		});
 	}
 

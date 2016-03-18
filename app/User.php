@@ -15,6 +15,10 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
 
+    protected $table = "user";
+
+    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+
     /**
      * The attributes excluded from the model's JSON form.
      *

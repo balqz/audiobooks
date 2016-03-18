@@ -15,10 +15,10 @@ class CreateWishlistTable extends Migration {
 		Schema::create('wishlist', function(Blueprint $table)
 		{
 			$table->integer('id', true);
-			$table->dateTime('createdAt');
-			$table->dateTime('updatedAt');
-			$table->integer('id_audiobook')->nullable()->index('id_audiobook_idx');
-			$table->integer('id_user')->nullable()->index('id_user_idx');
+			$table->timestamps();
+			$table->softDeletes();
+			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');
+			$table->integer('user_id')->nullable()->index('id_user_idx');
 		});
 	}
 

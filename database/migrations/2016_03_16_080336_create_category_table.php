@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCollectionTable extends Migration {
+class CreateCategoryTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,16 +12,16 @@ class CreateCollectionTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('collection', function(Blueprint $table)
+		Schema::create('category', function(Blueprint $table)
 		{
 			$table->integer('id', true);
-			$table->string('title', 100)->nullable();
+			$table->string('title', 50);
 			$table->string('subtitle', 50)->nullable();
+			$table->string('picture_url', 500)->nullable();
 			$table->string('about', 500)->nullable();
-			$table->string('pictureUrl', 500)->nullable();
-			$table->integer('visibility')->default(0);
-			$table->dateTime('createdAt');
-			$table->dateTime('updatedAt');
+			$table->timestamps();
+			$table->softDeletes();
+			$table->integer('parent_id')->nullable()->index('id_parent_idx');
 		});
 	}
 
@@ -33,7 +33,7 @@ class CreateCollectionTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('collection');
+		Schema::drop('category');
 	}
 
 }

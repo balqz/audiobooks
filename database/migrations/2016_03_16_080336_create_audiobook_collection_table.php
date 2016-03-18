@@ -15,8 +15,10 @@ class CreateAudiobookCollectionTable extends Migration {
 		Schema::create('audiobook_collection', function(Blueprint $table)
 		{
 			$table->integer('id')->primary();
-			$table->integer('id_audiobook')->nullable()->index('id_audiobook_idx');
-			$table->integer('id_collection')->nullable()->index('id_collection_idx');
+			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');
+			$table->integer('collection_id')->nullable()->index('id_collection_idx');
+			$table->timestamps();
+			$table->softDeletes();
 		});
 	}
 

@@ -14,8 +14,8 @@ class AddForeignKeysToAudiobookCollectionTable extends Migration {
 	{
 		Schema::table('audiobook_collection', function(Blueprint $table)
 		{
-			$table->foreign('id_audiobook', 'collection.id_audiobook')->references('id')->on('audiobook')->onUpdate('NO ACTION')->onDelete('NO ACTION');
-			$table->foreign('id_collection', 'collection.id_collection')->references('id')->on('collection')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('audiobook_id', 'collection.id_audiobook')->references('id')->on('audiobook')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('collection_id', 'collection.id_collection')->references('id')->on('collection')->onUpdate('NO ACTION')->onDelete('NO ACTION');
 		});
 	}
 
