@@ -42,7 +42,40 @@ $factory->define(App\AudioBook::class, function (Faker\Generator $faker) {
         'visibility' => 1,
         'released_at' => $faker->dateTimeThisDecade,
         'created_at' => $faker->dateTimeThisYear,
-        'updated_at' => $faker->dateTimeThisMonth,
+        'updated_at' => $faker->dateTimeThisMonth
+    ];
+});
+
+$factory->define(App\AudioBookChapter::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->sentence(2),
+        'subtitle' => $faker->sentence(3),
+        'price' => $faker->numberBetween(1000, 50000),
+        'about' => $faker->sentence,
+        'cover_picture_url' => 'http://static1.squarespace.com/static/5400e40be4b08161ea5c9b92/t/54bdc47de4b05e8a364b77d9/1421722750932/',
+        // TODO: Add Dummy AudioBook MP3
+        'created_at' => $faker->dateTimeThisYear,
+        'updated_at' => $faker->dateTimeThisMonth
+    ];
+});
+
+$factory->define(App\Collection::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->sentence(2),
+        'subtitle' => $faker->sentence(3),
+        'about' => $faker->sentence,
+        'picture_url' => 'http://www.backpackbudapest.hu/wp-content/uploads/2015/11/Budapest_Opera_interior.jpg',
+        'visibility' => 1,
+        'created_at' => $faker->dateTimeThisYear,
+        'updated_at' => $faker->dateTimeThisMonth
+    ];
+});
+
+$factory->define(App\Purchase::class, function (Faker\Generator $faker) {
+    return [
+        'price' => $faker->numberBetween(5000, 600000),
+        'created_at' => $faker->dateTimeThisYear,
+        'updated_at' => $faker->dateTimeThisMonth
     ];
 });
 

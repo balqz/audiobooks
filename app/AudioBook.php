@@ -32,6 +32,11 @@ class AudioBook extends Model
         return $this->hasMany('App\Purchase');
     }
 
+    public function reviews()
+    {
+        return $this->hasMany('App\Review');
+    }
+
     public function wishlistUsers()
     {
         return $this->belongsToMany('App\User', 'wishlist');
