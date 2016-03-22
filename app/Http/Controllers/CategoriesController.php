@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Category;
+use App\Utils\ApiUtils;
+use App\Utils\ResponseUtil;
 use Illuminate\Routing\Controller;
 
 class CategoriesController extends Controller

@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\AudioBookChapter;
+use App\Utils\ApiUtils;
+use App\Utils\ResponseUtil;
 use Illuminate\Routing\Controller;
 
 class AudioBookChaptersController extends Controller

@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\User;
+use App\Utils\ApiUtils;
 use App\Utils\AuthUtils;
 use App\Utils\ResponseUtil;
 use Illuminate\Routing\Controller;

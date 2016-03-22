@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Purchase;
+use App\Utils\ApiUtils;
+use App\Utils\ResponseUtil;
 use Illuminate\Routing\Controller;
 
 class PurchasesController extends Controller

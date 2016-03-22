@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Collection;
+use App\Utils\ApiUtils;
+use App\Utils\ResponseUtil;
 use Illuminate\Routing\Controller;
 
 class CollectionsController extends Controller
