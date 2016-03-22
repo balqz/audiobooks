@@ -36,7 +36,7 @@ Route::group(array('prefix' => 'api/v1'), function()
 		Route::resource('chapters', 'AudioBookChaptersController');
 		Route::resource('bundles', 'BundlesController');
 		Route::resource('categories', 'CategoriesController');
-		Route::resource('collections', 'ColelctionsController');
+		Route::resource('collections', 'CollectionsController');
 		Route::resource('purchases', 'PurchasesController');
 		Route::resource('users', 'UsersController');
 		Route::resource('auth', 'AuthenticateController');
