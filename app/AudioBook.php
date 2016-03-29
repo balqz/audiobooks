@@ -7,6 +7,8 @@ class AudioBook extends Model
 {
     use SoftDeletes;
 
+    protected $appends = ['reviews_count', 'ratings_average'];
+
     protected $table = 'audiobook';
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
@@ -34,7 +36,7 @@ class AudioBook extends Model
 
     public function reviews()
     {
-        return $this->hasMany('App\Review');
+        return $this->hasMany('App\Review', 'audiobook_id');
     }
 
     public function wishlistUsers()
@@ -55,6 +57,25 @@ class AudioBook extends Model
     public function bundles()
     {
         return $this->belongsToMany('App\Bundle');
+    }
+
+    public function getReviewsCountAttribute()
+    {
+        return $this->reviews->count();
+    }
+
+    public function getRatingsAverageAttribute()
+    {
+        if ($this->reviews_count > 0) {
+            $totalRating = 0;
+            foreach ($this->reviews as $r) {
+                $totalRating += $r->rating;
+            }
+
+            return $totalRating / $this->reviews_count;
+        } else {
+            return 0;
+        }
     }
 
 }

@@ -33,6 +33,7 @@ Route::group(['middleware' => ['web']], function () {
 Route::group(array('prefix' => 'api/v1'), function()
 	{
     	Route::resource('audiobooks', 'AudioBooksController');
+		Route::resource('reviews', 'ReviewsController');
 		Route::resource('chapters', 'AudioBookChaptersController');
 		Route::resource('bundles', 'BundlesController');
 		Route::resource('categories', 'CategoriesController');
