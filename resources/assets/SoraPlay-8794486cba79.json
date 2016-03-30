@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "soraplay-1265",
+  "private_key_id": "8794486cba790ae899bd399f58c7d8f54742286d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCIvFimcgmvEYJw\nFJjey8v0aEhLViZzzpbTvhDxwhfcQFd5kL88g6zF31antzxLI5rTFqLeNtwlI5LN\ndt/hneJX7CLgGSwk+FYGAWrFGl207rehi6X2rc2CqIx5A+Z8Q2eXEUEat32arJLW\nmO5EhcOSzEwg0zMTPcA/I+8b3yr4ubpxxBvL6Scdc0OC3o49Y85ERXFs1VD9c1dI\nEuIKcJrKgdpBO783oj9M8P+xBeg0yTVddSVantqcGn7E33ojQPfL3jYGkUikSF9N\n2Zmsq56Ovf7BP0zTgxzDQjn8EakozCCwX2D1Qgiw8uMeUP7z+oIp3FuRzAawQ/06\nIxu4QB4JAgMBAAECggEANvHwcZn7mDTiBGXSdBzSrTjGbDeHJhwK8bU7m9pRujjE\nrd3jas7Cu5SefrCb8tmw2kgLVF4ZIndkA1pUZpYKISiLbx/OZGDCOJGTNPb+Vrli\nYvD51OFMZseSAwL1OFPhqYvObIz1VRUpwEAd5r0VtMSRhtM3f/DdcsHe0IViACYR\nsSKkQcozzwIHJL/H5dCi4kc02VJsKpLU5febIpeXMmmIp+eA0G4UL6lng6yGHCgV\nxlXsJ6DwGZqRoEI2JOZ9GgHicqtUb7kzD1Df0ewVIkUHJz2UH9TRv7csWkjyq+Wm\nHHzAEcD94vOJ1d/LUwrOkLGFDiiyzvNkSg72rKAe7QKBgQDbAUUwV9KHPka2J3X5\nzCdhI8eQLm3QVYOLfzHQ2zfKNk6w+IFtnwmBSPhoMLzhIK/WY0pwYoCFwkGr0l02\nLOHeyS3fZeGUYk1NSAClVwDDNe0tn+uuee3EDW+D/q0DJ89woTb6k9Me2DHzGTx9\nWBWlZFy2xbpNC/jEstDi/cHVxwKBgQCf1WVAs5wqGdna36v/bL/gEVYA49AEWFoH\n/PpyiZIX9aAX0jMEJnlqXqHXOwh+H7G6Nqm3KSjXpnIwQA3YEalgBs+ExHYgThi2\nJ8EvfQJEQt/A+yy4v3f+VG4bzVb9spg2XyIOdbhePFIck5KdF2+I7vyRy8A3OEXw\npdoh1H0trwKBgBgj87R4ecReoPzDLMX0MwMKJp1GAOTOCEoAI0WaZHPtuI7ZVar3\ntNyDZp5VgPxv1fITz8jDktcrqoF+Frg6Cku8cUoGuO7aRxsVrLyM8pCSCSrWTexV\nlFfgA0LRd9C5Oqx3mM/WK5dizV62kWxfoUMx5OZgtUB46VsFOvFKd2tRAoGAaRvS\nXDxBZEZfx9nzqCOCAv4jiq5F67WWb05j/NKPaoYy47dtqTsL+XGGCJ5ftWFuZUDx\nVuwQWdCxox1cfU0QD4ArE+qGrDPveEqodmxFA1LfBm+nN09iv7QSPOJKZMf/5TGm\nmc+8kOwmK3i4n+n7hRd0rQRKwYWWKO1Ih5rPPy0CgYB7zvd9DrJyLp7hu73+4CjQ\ny+vvkGCRuV2cidDUAZY6lGXSgMAaKNUh8nkN9K+hiR3KEuIXzeJNXlRlrRn7V/MQ\nh5IXWhjh6ISDvMUM9mYO9ORHa8WB/x3IANVxiYM4433M3bVPDBAjDUbLBl32ofOo\nFXNGxbMpPJa5RKJgJ8Ublg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "soraplay@soraplay-1265.iam.gserviceaccount.com",
+  "client_id": "106384650352985295515",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/soraplay%40soraplay-1265.iam.gserviceaccount.com"
+}
