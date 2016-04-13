@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateAudiobookBundleTable extends Migration {
+class CreateAudiobookCollectionTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,10 @@ class CreateAudiobookBundleTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('audiobook_bundle', function(Blueprint $table)
+		Schema::create('audiobook_collection', function(Blueprint $table)
 		{
-			$table->integer('id', true);
 			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');
-			$table->integer('bundle_id')->nullable()->index('id_bundle_idx');
+			$table->integer('collection_id')->nullable()->index('id_collection_idx');
 			$table->timestamps();
 			$table->softDeletes();
 		});
@@ -30,7 +29,7 @@ class CreateAudiobookBundleTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('audiobook_bundle');
+		Schema::drop('audiobook_collection');
 	}
 
 }
