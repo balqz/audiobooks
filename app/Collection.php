@@ -12,7 +12,7 @@ class Collection extends Model {
 
 	public function audiobooks()
 	{
-		return $this->belongsToMany('App\Collection');
+		return $this->belongsToMany('App\AudioBook', 'audiobook_collection', 'collection_id', 'audiobook_id');
 	}
 
 }

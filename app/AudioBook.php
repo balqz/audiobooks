@@ -26,12 +26,12 @@ class AudioBook extends Model
 
     public function chapters()
     {
-        return $this->hasMany('App\AudioBookChapter');
+        return $this->hasMany('App\AudioBookChapter', 'audiobook_id');
     }
 
     public function purchases()
     {
-        return $this->hasMany('App\Purchase');
+        return $this->hasMany('App\Purchase', 'audiobook_id');
     }
 
     public function reviews()
@@ -41,7 +41,7 @@ class AudioBook extends Model
 
     public function wishlistUsers()
     {
-        return $this->belongsToMany('App\User', 'wishlist');
+        return $this->belongsToMany('App\User', 'wishlist', 'audiobook_id');
     }
 
     public function users()

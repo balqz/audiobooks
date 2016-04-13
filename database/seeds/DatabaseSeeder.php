@@ -1,10 +1,13 @@
 <?php
 
+use App\Category;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *
@@ -18,7 +21,21 @@ class DatabaseSeeder extends Seeder
         factory(App\User::class, 100)->create();
 
         factory(App\Category::class, 10)->create()->each(function ($c) {
-            $c->audiobooks()->save(factory(App\AudioBook::class)->make());
+            $c->audiobooks()->saveMany(factory(App\AudioBook::class, 10)->create()->each(function ($d) {
+                $d->chapters()->saveMany(factory(App\AudioBookChapter::class, 10)->make());
+                $d->reviews()->save(factory(App\Review::class)->make());
+                $d->wishlistUsers()->save(User::all()->random(1));
+                $d->purchases()->saveMany(factory(App\Purchase::class, 10)->create()->each(function ($purchase) {
+                    $purchase->user_id = User::all()->random(1)->id;
+                }));
+            }));
+        });
+
+
+        factory(App\Collection::class, 10)->create()->each(function ($c) {
+            $c->audiobooks()->saveMany(factory(App\AudioBook::class, 5)->create()->each(function ($d) {
+                $d->category_id = Category::all()->random(1)->id;
+            }));
         });
 
         Model::reguard();

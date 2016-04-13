@@ -89,3 +89,12 @@ $factory->define(App\Category::class, function (Faker\Generator $faker) {
         'updated_at' => $faker->dateTimeThisMonth
     ];
 });
+
+$factory->define(App\Review::class, function (Faker\Generator $faker) {
+    return [
+        'content' => $faker->sentence(15),
+        'rating' => $faker->randomFloat(5, 1),
+        'created_at' => $faker->dateTimeThisYear,
+        'updated_at' => $faker->dateTimeThisMonth
+    ];
+});
