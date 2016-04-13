@@ -31,6 +31,7 @@ class ApiUtils
     public static function parseRelated($related)
     {
         if ($related == NULL) return NULL;
+        $related = strtolower($related);
         return explode(",", $related);
     }
 
