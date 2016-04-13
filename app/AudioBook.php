@@ -24,37 +24,37 @@ class AudioBook extends Model
         return $this->belongsTo('App\Category');
     }
 
-    public function chapters()
+    public function audiobookChapter()
     {
         return $this->hasMany('App\AudioBookChapter', 'audiobook_id');
     }
 
-    public function purchases()
+    public function purchase()
     {
         return $this->hasMany('App\Purchase', 'audiobook_id');
     }
 
-    public function reviews()
+    public function review()
     {
         return $this->hasMany('App\Review', 'audiobook_id');
     }
 
-    public function wishlistUsers()
+    public function wishlist()
     {
         return $this->belongsToMany('App\User', 'wishlist', 'audiobook_id');
     }
 
-    public function users()
+    public function user()
     {
         return $this->belongsToMany('App\User', 'purchase');
     }
 
-    public function collections()
+    public function collection()
     {
         return $this->belongsToMany('App\Collection');
     }
 
-    public function bundles()
+    public function bundle()
     {
         return $this->belongsToMany('App\Bundle');
     }

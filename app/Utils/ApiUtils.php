@@ -55,6 +55,11 @@ class ApiUtils
 
     public static function get(Builder $builder, $id)
     {
+        $related = self::parseRelated(request()->get('fields'));
+        if ($related != NULL) {
+            $builder->with($related);
+        }
+
         return $builder->find($id);
     }
 

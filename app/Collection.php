@@ -10,7 +10,7 @@ class Collection extends Model {
 
 	protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
-	public function audiobooks()
+	public function audiobook()
 	{
 		return $this->belongsToMany('App\AudioBook', 'audiobook_collection', 'collection_id', 'audiobook_id');
 	}

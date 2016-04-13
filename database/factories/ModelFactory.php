@@ -11,6 +11,7 @@
 |
 */
 
+use App\User;
 use Illuminate\Support\Facades\Hash;
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
@@ -94,6 +95,7 @@ $factory->define(App\Review::class, function (Faker\Generator $faker) {
     return [
         'content' => $faker->sentence(15),
         'rating' => $faker->randomFloat(5, 1),
+        'user_id' => User::all()->random(1)->id,
         'created_at' => $faker->dateTimeThisYear,
         'updated_at' => $faker->dateTimeThisMonth
     ];
