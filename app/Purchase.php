@@ -18,4 +18,9 @@ class Purchase extends Model
         return $this->belongsTo('App\User');
     }
 
+    public function audiobook()
+    {
+        return $this->belongsTo('App\AudioBook');
+    }
+
 }
