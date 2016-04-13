@@ -61,6 +61,7 @@ class AudioBook extends Model
 
     public function getReviewsCountAttribute()
     {
+        if ($this->reviews == null) return 0;
         return $this->reviews->count();
     }
 
