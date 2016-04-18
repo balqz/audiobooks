@@ -16,4 +16,14 @@ class AudioBookChapter extends Model
         return $this->belongsTo('App\AudioBook');
     }
 
+    public function purchase()
+    {
+        return $this->hasMany('App\Purchase', 'audiobookChapter_id');
+    }
+
+    public function user()
+    {
+        return $this->belongsToMany('App\User', 'purchase', 'audiobookChapter_id');
+    }
+
 }

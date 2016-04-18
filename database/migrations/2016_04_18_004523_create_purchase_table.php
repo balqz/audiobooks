@@ -19,6 +19,7 @@ class CreatePurchaseTable extends Migration {
 			$table->timestamps();
 			$table->softDeletes();
 			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');
+			$table->integer('audiobookChapter_id')->nullable()->index('purchase.id_audiobookChapter_idx');
 			$table->integer('user_id')->nullable()->index('purchase.id_user_idx');
 		});
 	}

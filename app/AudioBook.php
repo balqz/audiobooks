@@ -46,7 +46,7 @@ class AudioBook extends Model
 
     public function user()
     {
-        return $this->belongsToMany('App\User', 'purchase');
+        return $this->belongsToMany('App\User', 'purchase', 'audiobook_id');
     }
 
     public function collection()
