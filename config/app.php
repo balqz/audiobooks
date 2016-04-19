@@ -159,6 +159,7 @@ return [
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class, // Laravel IDE helper
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+	Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 

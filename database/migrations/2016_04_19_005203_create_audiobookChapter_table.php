@@ -21,6 +21,7 @@ class CreateAudiobookChapterTable extends Migration {
 			$table->string('about', 500)->nullable();
 			$table->string('cover_picture_url', 500)->nullable();
 			$table->string('audio_file_url', 500)->nullable();
+			$table->bigInteger('duration_seconds')->nullable();
 			$table->timestamps();
 			$table->softDeletes();
 			$table->integer('audiobook_id')->nullable()->index('id_audiobook_idx');

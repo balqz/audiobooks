@@ -37,7 +37,7 @@ $factory->define(App\AudioBook::class, function (Faker\Generator $faker) {
         'price' => $faker->numberBetween(5000, 600000),
         'about' => $faker->sentence,
         'duration_seconds' => $faker->numberBetween(5000, 40000),
-        'cover_picture_url' => 'http://static1.squarespace.com/static/5400e40be4b08161ea5c9b92/t/54bdc47de4b05e8a364b77d9/1421722750932/',
+        'cover_picture_url' => 'http://ecx.images-amazon.com/images/I/61clY6n-0UL._SL300_.jpg',
         'banner_picture_url' => 'http://www.youngpeoplestheatre.ca/wp-content/uploads/2014/06/showpage-mockingbird.jpg',
         'copyright_year' => $faker->year,
         'visibility' => 1,
@@ -53,8 +53,9 @@ $factory->define(App\AudioBookChapter::class, function (Faker\Generator $faker) 
         'subtitle' => $faker->sentence(3),
         'price' => $faker->numberBetween(1000, 50000),
         'about' => $faker->sentence,
-        'cover_picture_url' => 'http://static1.squarespace.com/static/5400e40be4b08161ea5c9b92/t/54bdc47de4b05e8a364b77d9/1421722750932/',
-        // TODO: Add Dummy AudioBook MP3
+        'cover_picture_url' => 'http://ecx.images-amazon.com/images/I/51YRHakTODL._SL300_.jpg',
+        'audio_file_url' => 'http://103.23.22.32/soraplay/public/play.mp3',
+        'duration_seconds' => $faker->numberBetween(5000, 40000),
         'created_at' => $faker->dateTimeThisYear,
         'updated_at' => $faker->dateTimeThisMonth
     ];

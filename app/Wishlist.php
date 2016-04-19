@@ -2,6 +2,11 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Wishlist
+ *
+ * @mixin \Eloquent
+ */
 class Wishlist extends Model {
 
 	protected $fillable = [];
