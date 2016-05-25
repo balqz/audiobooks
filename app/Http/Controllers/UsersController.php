@@ -4,6 +4,7 @@ use App\User;
 use App\Utils\ApiUtils;
 use App\Utils\AuthUtils;
 use App\Utils\ResponseUtil;
+use Hash;
 use Illuminate\Routing\Controller;
 
 class UsersController extends Controller
