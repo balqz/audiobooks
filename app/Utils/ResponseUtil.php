@@ -17,8 +17,9 @@ class ResponseUtil
         return response()->json(array(
             'error' => $error,
             'userMessage' => $message,
-            'data' => $data
-        ), $statusCode);
+			'status'=>$statusCode,
+            'data' => $data,
+        ));
     }
 
 }

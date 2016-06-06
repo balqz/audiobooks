@@ -30,7 +30,7 @@ Route::group(['middleware' => ['web']], function () {
     //
 });
 
-Route::group(array('prefix' => 'api/v1'), function()
+Route::group(array('prefix' => 'api/v1/admin'), function()
 	{
     	Route::resource('audiobooks', 'AudioBooksController');
 		Route::resource('reviews', 'ReviewsController');
@@ -39,6 +39,17 @@ Route::group(array('prefix' => 'api/v1'), function()
 		Route::resource('categories', 'CategoriesController');
 		Route::resource('collections', 'CollectionsController');
 		Route::resource('purchases', 'PurchasesController');
-		Route::resource('users', 'UsersController');
 		Route::resource('auth', 'AuthenticateController');
+		Route::resource('users', 'UsersController');
+		
+		Route::post('auth/login', 'AuthenticateController@login');
+		Route::group(array('prefix' => '/user/'), function()
+		{
+			Route::get('viewall', 'UsersController@viewall');
+			Route::post('create', 'UsersController@create');
+			Route::post('edit/{id}', 'UsersController@edit');
+			Route::get('view/{id}', 'UsersController@show');
+			Route::get('delete/{id}', 'UsersController@destroy');
+		
+		});
 	});
