@@ -7,6 +7,7 @@ use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Illuminate\Support\Facades\Auth;
 use Input;
+use App\User;
 
 class AuthenticateController extends Controller
 {
@@ -33,15 +34,23 @@ class AuthenticateController extends Controller
                 500
             );
         }
+		$id = Auth::id();
+		$user = User::find($id);
+		if(isset($user)){
+			$res = array('role'=>$user->role);
+			$merg = array_merge($res,$cred);
+			$result = ResponseUtil::json($merg,'success','berhasil');
+		}else{
+			$result = ResponseUtil::json('','tidak ada data','failed',201);
+		}
 		// all good so return the token
-        return ResponseUtil::json($cred,'success','berhasil');
+        return $result;
     }
 	
 	public function store()
     {
         // grab credentials from the request
         $credentials = Request::json()->all();
-
         try {
             // attempt to verify the credentials and create a token for the user
             if (!$token = JWTAuth::attempt($credentials)) {
@@ -64,6 +73,5 @@ class AuthenticateController extends Controller
 
         // all good so return the token
         return ResponseUtil::json(compact('token'));
-    }
-	
+    }	
 }

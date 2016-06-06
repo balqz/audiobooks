@@ -46,7 +46,28 @@ class AudioBooksController extends Controller
     {
         return ResponseUtil::json(ApiUtils::get(AudioBook::query(), $id));
     }
+	
+	public function create()
+    {
+       	// store
+		$audioBook = new AudioBook;
+		$nerd->email      	= Input::get('email');
+		$nerd->password      = bcrypt(Input::get('password'));
+		$nerd->name 		 = Input::get('name');
+		$nerd->birth_date_at = Input::get('birth_date_at');
+		$nerd->phone_number  = Input::get('phone_number');
+		$nerd->gender 		 = Input::get('gender');
+		$nerd->about 		 = Input::get('about');
+		$nerd->website 		 = Input::get('website');
+		$nerd->relationship_status 	= Input::get('relationship_status');
+		$nerd->location 		 = Input::get('location');
+		$nerd->role 			 = Input::get('role');
+		$nerd->save();
 
+		$result = ResponseUtil::json($nerd,'success','berhasil');
+        
+		return $result;
+    }
 
     /**
      * Update the specified resource in storage.
