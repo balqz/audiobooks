@@ -37,7 +37,9 @@ class AuthenticateController extends Controller
 		$id = Auth::id();
 		$user = User::find($id);
 		if(isset($user)){
-			$res = array('role'=>$user->role);
+			$res = array('id'=>$user->id,
+						 'role'=>$user->role
+						);
 			$merg = array_merge($res,$cred);
 			$result = ResponseUtil::json($merg,'success','berhasil');
 		}else{

@@ -32,24 +32,45 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::group(array('prefix' => 'api/v1/admin'), function()
 	{
-    	Route::resource('audiobooks', 'AudioBooksController');
 		Route::resource('reviews', 'ReviewsController');
 		Route::resource('chapters', 'AudioBookChaptersController');
 		Route::resource('bundles', 'BundlesController');
-		Route::resource('categories', 'CategoriesController');
 		Route::resource('collections', 'CollectionsController');
 		Route::resource('purchases', 'PurchasesController');
 		Route::resource('auth', 'AuthenticateController');
-		Route::resource('users', 'UsersController');
 		
 		Route::post('auth/login', 'AuthenticateController@login');
+		//user
 		Route::group(array('prefix' => '/user/'), function()
 		{
-			Route::get('viewall', 'UsersController@viewall');
-			Route::post('create', 'UsersController@create');
-			Route::post('edit/{id}', 'UsersController@edit');
-			Route::get('view/{id}', 'UsersController@show');
-			Route::get('delete/{id}', 'UsersController@destroy');
+			Route::get('viewall',['as' => 'user', 'uses' => 'UsersController@viewall']);
+			Route::post('create',['as' => 'user', 'uses' => 'UsersController@create']);
+			Route::post('edit/{id}',['as' => 'user', 'uses' => 'UsersController@edit']);
+			Route::get('view/{id}',['as' => 'user', 'uses' => 'UsersController@show']);
+			Route::get('delete/{id}',['as' => 'user', 'uses' => 'UsersController@destroy']);
 		
 		});
+		Route::resource('users', 'UsersController');
+		//audiobooks
+		Route::group(array('prefix' => '/audiobooks/'), function()
+		{
+			Route::get('viewall',['as' => 'audiobook', 'uses' => 'AudioBooksController@viewall']);
+			Route::get('view/{id}',['as' => 'audiobook', 'uses' => 'AudioBooksController@show']);
+			Route::post('edit/{id}',['as' => 'audiobook', 'uses' => 'AudioBooksController@edit']);
+			Route::post('create',['as' => 'audiobook', 'uses' => 'AudioBooksController@create']);
+			Route::get('delete/{id}',['as' => 'audiobook', 'uses' => 'AudioBooksController@delete']);
+		
+		});
+		Route::resource('audiobooks', 'AudioBooksController');
+		//category
+		Route::group(array('prefix' => '/categories/'), function()
+		{
+			Route::post('create',['as' => 'categories', 'uses' => 'CategoriesController@create']);
+			Route::post('edit/{id}',['as' => 'categories', 'uses' => 'CategoriesController@edit']);
+			Route::get('view/{id}',['as' => 'categories', 'uses' => 'CategoriesController@show']);
+			Route::get('viewall',['as' => 'categories', 'uses' => 'CategoriesController@viewall']);
+			Route::get('delete/{id}',['as' => 'categories', 'uses' => 'CategoriesController@delete']);
+		
+		});
+		Route::resource('categories', 'CategoriesController');
 	});

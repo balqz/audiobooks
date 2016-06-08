@@ -38,5 +38,20 @@ class Category extends Model {
 	{
 		return $this->hasMany('App\AudioBook');
 	}
+	
+	public function category()
+	{
+		return $this->hasMany('App\Category');
+	}
+	
+	public function child()
+    {
+        return $this->hasMany('App\Category','parent_id','id');
+    }
+	
+	public function categories()
+    {
+        return $this->belongsToMany('App\Category', 'category', 'parent_id');
+    }
 
 }

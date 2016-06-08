@@ -7,6 +7,7 @@ use App\Utils\ResponseUtil;
 use Hash;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Database\Query\Builder;
 use Input;
 
 class UsersController extends Controller
@@ -62,8 +63,11 @@ class UsersController extends Controller
             $nerd->location 		 = Input::get('location');
             $nerd->role 			 = Input::get('role');
             $nerd->save();
-
-			$result = ResponseUtil::json($nerd,'success','berhasil');
+			if(isset($nerd){
+				$result = ResponseUtil::json($nerd,'success','berhasil');
+			}else{
+				$result = ResponseUtil::json('','data tidak tersimpan','failed',201);
+			}
         }
 		return $result;
     }
@@ -75,8 +79,13 @@ class UsersController extends Controller
 	
 	public function viewall()
     {	
-		$user = ApiUtils::getList(User::query());
-        $result = ResponseUtil::json($user,'berhasil','success');	
+		$users = ApiUtils::getList(User::query());
+		if(isset($users)){
+			$result = ResponseUtil::json($users,'berhasil','success');
+			
+		}else{
+			$result = ResponseUtil::json('','tidak ada data','failed',201);
+		}
 		return $result;
     }
 	
@@ -146,9 +155,9 @@ class UsersController extends Controller
 			$data_user->updated_at 			=  date('Y-m-d H:i:s');
 			$data_user->save();
 
-			$result = ResponseUtil::json($data_user,'berhasil','success');				
+			$result = ResponseUtil::json($data_user,'data tersimpan','success');			
 		}else{
-			$result = ResponseUtil::json('','tidak ada data','failed',201);
+			$result = ResponseUtil::json('','data tidak tersimpan','failed',201);
 		}
 		return $result;
     }
