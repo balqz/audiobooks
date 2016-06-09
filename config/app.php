@@ -39,7 +39,9 @@ return [
     |
     */
 
-    'url' => 'http://localhost/audiobook_api/',
+    'url' => 'http://localhost/_webstatis/audiobook_api/',
+    'url_api' => 'http://localhost/_webstatis/audiobook_api/',
+
 
     /*
     |--------------------------------------------------------------------------
