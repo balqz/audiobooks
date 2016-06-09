@@ -29,17 +29,47 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
-
+Route::group(array('prefix' => 'api/v1'), function(){
+	Route::resource('purchases', 'PurchasesController');
+	Route::resource('reviews', 'ReviewsController');
+	Route::resource('bundles', 'BundlesController');
+	Route::resource('auth', 'AuthenticateController');
+	Route::resource('users', 'UsersController');
+	Route::resource('audiobooks', 'AudioBooksController');
+	Route::resource('categories', 'CategoriesController');
+	Route::resource('collections', 'CollectionsController');
+	Route::resource('chapters', 'AudioBookChaptersController');
+});
 Route::group(array('prefix' => 'api/v1/admin'), function()
 	{
-		Route::resource('reviews', 'ReviewsController');
-		Route::resource('chapters', 'AudioBookChaptersController');
-		Route::resource('bundles', 'BundlesController');
-		Route::resource('collections', 'CollectionsController');
-		Route::resource('purchases', 'PurchasesController');
+				
+		Route::resource('bundles', 'BundlesController');		
+		
 		Route::resource('auth', 'AuthenticateController');
 		
 		Route::post('auth/login', 'AuthenticateController@login');
+		//reviews
+		Route::group(array('prefix' => '/reviews/'), function()
+		{
+			Route::get('viewall',['as' => 'reviews', 'uses' => 'ReviewsController@viewall']);
+			//Route::post('create',['as' => 'reviews', 'uses' => 'ReviewsController@create']);
+			//Route::post('edit/{id}',['as' => 'reviews', 'uses' => 'ReviewsController@edit']);
+			Route::get('view/{id}',['as' => 'reviews', 'uses' => 'ReviewsController@show']);
+			Route::get('delete/{id}',['as' => 'reviews', 'uses' => 'ReviewsController@delete']);
+		
+		});
+		Route::resource('reviews', 'ReviewsController');
+		//purchases
+		Route::group(array('prefix' => '/purchases/'), function()
+		{
+			Route::get('viewall',['as' => 'purchases', 'uses' => 'PurchasesController@viewall']);
+			//Route::post('create',['as' => 'purchases', 'uses' => 'PurchasesController@create']);
+			//Route::post('edit/{id}',['as' => 'purchases', 'uses' => 'PurchasesController@edit']);
+			Route::get('view/{id}',['as' => 'purchases', 'uses' => 'PurchasesController@show']);
+			Route::get('delete/{id}',['as' => 'purchases', 'uses' => 'PurchasesController@delete']);
+		
+		});
+		Route::resource('purchases', 'PurchasesController');
 		//user
 		Route::group(array('prefix' => '/user/'), function()
 		{
@@ -73,4 +103,26 @@ Route::group(array('prefix' => 'api/v1/admin'), function()
 		
 		});
 		Route::resource('categories', 'CategoriesController');
+		//collection
+		Route::group(array('prefix' => '/collection/'), function()
+		{
+			Route::post('create',['as' => 'collections', 'uses' => 'CollectionsController@create']);
+			Route::post('edit/{id}',['as' => 'collections', 'uses' => 'CollectionsController@edit']);
+			Route::get('view/{id}',['as' => 'collections', 'uses' => 'CollectionsController@show']);
+			Route::get('viewall',['as' => 'collections', 'uses' => 'CollectionsController@viewall']);
+			Route::get('delete/{id}',['as' => 'collections', 'uses' => 'CollectionsController@delete']);
+		
+		});
+		Route::resource('collections', 'CollectionsController');
+		//collection
+		Route::group(array('prefix' => '/chapters/'), function()
+		{
+			Route::post('create',['as' => 'chapters', 'uses' => 'AudioBookChaptersController@create']);
+			Route::post('edit/{id}',['as' => 'chapters', 'uses' => 'AudioBookChaptersController@edit']);
+			Route::get('view/{id}',['as' => 'chapters', 'uses' => 'AudioBookChaptersController@show']);
+			Route::get('viewall',['as' => 'chapters', 'uses' => 'AudioBookChaptersController@viewall']);
+			Route::get('delete/{id}',['as' => 'chapters', 'uses' => 'AudioBookChaptersController@delete']);
+		
+		});
+		Route::resource('chapters', 'AudioBookChaptersController');
 	});

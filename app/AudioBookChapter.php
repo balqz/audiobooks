@@ -2,7 +2,7 @@
 
 use App\Utils\AuthUtils;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * App\AudioBookChapter
  *
@@ -37,8 +37,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class AudioBookChapter extends Model
 {
-
-    protected $table = 'audiobookChapter';
+	use SoftDeletes;
+    protected $table = 'audiobook_chapter';
 
     protected $fillable = [];
 

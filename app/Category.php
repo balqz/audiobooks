@@ -1,6 +1,7 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * App\Category
@@ -27,7 +28,7 @@ use Illuminate\Database\Eloquent\Model;
  * @mixin \Eloquent
  */
 class Category extends Model {
-
+	use SoftDeletes;
 	protected $table = 'category';
 
 	protected $fillable = [];

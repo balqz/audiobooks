@@ -1,0 +1,2901 @@
+{
+	"id": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+	"name": "SoraPlay Panel",
+	"description": "Soraplay audiobook streaming service\nhttp://localhost/audiobook_api",
+	"order": [
+		"c6203555-e4bc-6f72-4c08-41312c5ddf51"
+	],
+	"folders": [
+		{
+			"id": "df76e0c2-1ce5-e3ea-fa6d-e1560b9fd773",
+			"name": "AudioBook",
+			"description": "",
+			"order": [
+				"34dca0f2-5fa6-5a0b-cb41-e73c716cfa16",
+				"81a7a4e6-47c7-c9de-b79a-940cbcb7e8af",
+				"5b622576-8aa7-f189-b4cb-6b5f0cccb6f1",
+				"1bddcde1-2fd4-6ce6-daf7-e628da7da526",
+				"aace19d1-654e-1dbd-782e-d1de8dba3eb3",
+				"bea41d7c-121a-cf80-bede-0b91156a8dbe"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f"
+		},
+		{
+			"id": "5b9e359b-c247-1d01-c148-a205f9823de0",
+			"name": "AudioBookChapter",
+			"description": "",
+			"order": [
+				"70c58b3b-0f60-92f0-2abc-3cb782094fa2",
+				"1a865518-4dc2-bf7e-e7fc-ea0525fe750b",
+				"879dd320-cbf1-5e01-7711-4b128654bbea",
+				"02377921-759a-94d1-2195-64b49c813a7b",
+				"51969fab-05cc-9e3f-46da-4e299a862b2f",
+				"9cdedef2-81e0-f562-4136-65481c93b96b"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"timestamp": null
+		},
+		{
+			"id": "83ebaba2-e7e2-a5f1-0f52-bebfa0f3068c",
+			"name": "AudioBookCollection",
+			"description": "",
+			"order": [
+				"ea910857-cf51-bfe5-d398-d75982961f3a",
+				"63a80d67-03d0-1518-7411-8c749c8876ca"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"timestamp": null
+		},
+		{
+			"id": "64b2be86-584e-2675-874c-f0b2d0b0f1e3",
+			"name": "Category",
+			"description": "",
+			"order": [
+				"f5496359-d2ad-60bd-684b-34552626d9de",
+				"c63a81a1-23cc-ccf8-1d7e-01f9d65466a3",
+				"860d0b41-5712-0f52-cf57-bdb36808466f",
+				"9be9a88e-2065-98a1-615c-dc7e69698db6",
+				"4c3822e7-2f32-3e11-d653-18ee1bd8f97e",
+				"5a07b9c3-2236-4126-a63a-f41d173a2070"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"timestamp": null
+		},
+		{
+			"id": "03b57b4a-021b-e674-26fc-a39d7efcea49",
+			"name": "Collection",
+			"description": "",
+			"order": [
+				"416d673e-d589-a82d-9be3-1a3530fe49a1",
+				"91e2373b-d866-0a7c-b2c1-91147b110bf4",
+				"40970406-8264-79ab-eba3-55a8cf5c4fdf",
+				"d0b7506c-c356-f2b7-84f2-7c05a357d17b",
+				"b01c8a92-305b-345f-2ba6-2a075f605aef",
+				"864cf7b7-e400-892a-6954-d12cf104ac1f"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"timestamp": null
+		},
+		{
+			"id": "67a5ab9f-e909-37b1-8fdb-c03d20ae24d3",
+			"name": "Purchases",
+			"description": "",
+			"order": [
+				"8d5308cf-6c11-be64-a697-e7955c384dc0",
+				"63e5dd27-babd-4b6e-88b9-15f1709257fd",
+				"c9f93cd8-8f5a-764f-aba5-96a8fdfa8d33",
+				"2f21a838-c587-6c1c-4952-b9903a3eba71"
+			],
+			"owner": "174127"
+		},
+		{
+			"id": "98383cf9-f38a-13ee-b91a-d4a2a28fb444",
+			"name": "Review",
+			"description": "",
+			"order": [
+				"611bd92c-7fd9-7ee0-7f31-fdb2e7fc20a2",
+				"5f54148d-d640-b65a-6074-53ad4219ea03",
+				"cb6a4d69-ee07-cc54-5377-a947e938df9e",
+				"84b38369-5b6f-6c6f-6142-c3f9d101ef7a"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f"
+		},
+		{
+			"id": "f0fe47aa-06aa-80ff-6920-bb1c08a2f5fd",
+			"name": "User",
+			"description": "",
+			"order": [
+				"c0441247-67fb-247d-3834-239186d5f0c2",
+				"c30a6616-957f-dedd-74de-4e680503bea4",
+				"a54d202e-2f1c-01ae-a806-adbdab005d2b",
+				"b17df3f7-1245-1a51-321b-b461e8e42604",
+				"67624ee3-b0da-562a-6ccf-e65c2d27595c"
+			],
+			"owner": "174127",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f"
+		}
+	],
+	"timestamp": 1465212774037,
+	"owner": "174127",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "02377921-759a-94d1-2195-64b49c813a7b",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/chapters/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465446876201,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "1a865518-4dc2-bf7e-e7fc-ea0525fe750b",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/chapters/edit/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "450000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cover_picture_url",
+					"value": "Android-SuperUser.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "audio_file_url",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "duration_seconds",
+					"value": "-9223372036854775808",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "audiobook_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465447803109,
+			"name": "update",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "1bddcde1-2fd4-6ce6-daf7-e628da7da526",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/audiobooks/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465314306834,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "2f21a838-c587-6c1c-4952-b9903a3eba71",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/purchases/delete/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465453283677,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "34dca0f2-5fa6-5a0b-cb41-e73c716cfa16",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/audiobooks/create",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "author",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "narrator",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "150000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "audio_file_url",
+					"value": "Android-SuperUser.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "audio_preview_file_url",
+					"value": "Cupumanik - Perkenankan Aku Mencintainya.mp3",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "duration_seconds",
+					"value": "-9223372036854775808",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cover_picture_url",
+					"value": "Android-SuperUseraaa.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "banner_picture_url",
+					"value": "(Bruno Mars) It Will Rain - Sungha Jung .FLV",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "copyright_year",
+					"value": "2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "visibility",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "released_at",
+					"value": "2016-06-06 13:07:29",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "publisher_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465450019748,
+			"name": "create",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "40970406-8264-79ab-eba3-55a8cf5c4fdf",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/collection/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465444965096,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "416d673e-d589-a82d-9be3-1a3530fe49a1",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/collection/create",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "picture_url",
+					"value": "Android-SuperUser.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "visibility",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465445136335,
+			"name": "create",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "4c3822e7-2f32-3e11-d653-18ee1bd8f97e",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/categories/delete/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465316168833,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "51969fab-05cc-9e3f-46da-4e299a862b2f",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/chapters/delete/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465449669062,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "5a07b9c3-2236-4126-a63a-f41d173a2070",
+			"headers": "",
+			"url": "http://103.23.22.171/api.audiobuku.com/public/api/v1/categories",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"data": null,
+			"dataMode": "params",
+			"name": "List Categories",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1464693264480,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "64b2be86-584e-2675-874c-f0b2d0b0f1e3"
+		},
+		{
+			"id": "5b622576-8aa7-f189-b4cb-6b5f0cccb6f1",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/audiobooks/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465446108005,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "5f54148d-d640-b65a-6074-53ad4219ea03",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/reviews/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465453456944,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "611bd92c-7fd9-7ee0-7f31-fdb2e7fc20a2",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/reviews/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465453453377,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "63a80d67-03d0-1518-7411-8c749c8876ca",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/chapters/edit/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "audiobook_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "collection_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465450977512,
+			"name": "update",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "63e5dd27-babd-4b6e-88b9-15f1709257fd",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/purchases/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465451968318,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "67624ee3-b0da-562a-6ccf-e65c2d27595c",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/user/delete/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465217731821,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "70c58b3b-0f60-92f0-2abc-3cb782094fa2",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/chapters/create",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum 2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum 2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "450000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum 2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cover_picture_url",
+					"value": "Android-SuperUseraaa.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "audio_file_url",
+					"value": "Cupumanik - Perkenankan Aku Mencintainya.mp3",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "duration_seconds",
+					"value": "-9223372036854775808",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "audiobook_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465449518293,
+			"name": "create",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "81a7a4e6-47c7-c9de-b79a-940cbcb7e8af",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/audiobooks/edit/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "author",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "narrator",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isbn",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "150000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "audio_file_url",
+					"value": "Android-SuperUser.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "audio_preview_file_url",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "duration_seconds",
+					"value": "15",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cover_picture_url",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "banner_picture_url",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "copyright_year",
+					"value": "2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "visibility",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "released_at",
+					"value": "2016-06-06 13:07:29",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "publisher_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465450531432,
+			"name": "update",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "84b38369-5b6f-6c6f-6142-c3f9d101ef7a",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/reviews",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1464696605729,
+			"name": "List Reviews",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": [],
+			"folder": "98383cf9-f38a-13ee-b91a-d4a2a28fb444"
+		},
+		{
+			"id": "860d0b41-5712-0f52-cf57-bdb36808466f",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/categories/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465317193402,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "864cf7b7-e400-892a-6954-d12cf104ac1f",
+			"headers": "",
+			"url": "http://103.23.22.171/api.audiobuku.com/public/api/v1/collections",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1464693533522,
+			"name": "List Collection",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": [],
+			"folder": "03b57b4a-021b-e674-26fc-a39d7efcea49"
+		},
+		{
+			"id": "879dd320-cbf1-5e01-7711-4b128654bbea",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/chapters/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465446873971,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "8d5308cf-6c11-be64-a697-e7955c384dc0",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/purchases",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465451590526,
+			"name": "List Purchases",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "91e2373b-d866-0a7c-b2c1-91147b110bf4",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/collection/edit/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "picture_url",
+					"value": "Android-SuperUseraaa.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "visibility",
+					"value": "10",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465445163616,
+			"name": "update",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "9be9a88e-2065-98a1-615c-dc7e69698db6",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/categories/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465316165595,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "9cdedef2-81e0-f562-4136-65481c93b96b",
+			"headers": "",
+			"url": "http://103.23.22.171/api.audiobuku.com/public/api/v1/chapters",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"data": null,
+			"dataMode": "params",
+			"name": "List Chapter",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1464693628884,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "5b9e359b-c247-1d01-c148-a205f9823de0"
+		},
+		{
+			"id": "a54d202e-2f1c-01ae-a806-adbdab005d2b",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/user/view/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465217557658,
+			"name": "view id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "aace19d1-654e-1dbd-782e-d1de8dba3eb3",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/audiobooks/delete/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465313629497,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "b01c8a92-305b-345f-2ba6-2a075f605aef",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/collection/delete/4",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465446421760,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "b17df3f7-1245-1a51-321b-b461e8e42604",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/user/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465218497142,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "bea41d7c-121a-cf80-bede-0b91156a8dbe",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/audiobooks",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1464774458036,
+			"name": "List AudioBook",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": [],
+			"folder": "df76e0c2-1ce5-e3ea-fa6d-e1560b9fd773"
+		},
+		{
+			"id": "c0441247-67fb-247d-3834-239186d5f0c2",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/user/create",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevinh@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevinh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "single",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465224237968,
+			"name": "Create",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "c30a6616-957f-dedd-74de-4e680503bea4",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/user/edit/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevins@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevins",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "single",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465222336853,
+			"name": "Edit",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "c6203555-e4bc-6f72-4c08-41312c5ddf51",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/auth/login",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevins@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevins",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465218983746,
+			"name": "Login",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f"
+		},
+		{
+			"id": "c63a81a1-23cc-ccf8-1d7e-01f9d65466a3",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/categories/edit/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "picture_url",
+					"value": "Android-SuperUseraaa.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "parent_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465317065881,
+			"name": "update",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "c9f93cd8-8f5a-764f-aba5-96a8fdfa8d33",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/purchases/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465451970803,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "cb6a4d69-ee07-cc54-5377-a947e938df9e",
+			"headers": "",
+			"url": "localhost/audiobook_api/public/api/v1/admin/reviews/delete/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465453459230,
+			"name": "delete id",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "d0b7506c-c356-f2b7-84f2-7c05a357d17b",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/collection/viewall",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "kevin@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "kevin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Kevin Aprilio",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birth_date_at",
+					"value": "1990-09-09",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone_number",
+					"value": "0989999099",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "L",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "http://www.dodolgarut.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "relationship_status",
+					"value": "singlr",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "Garut",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465444967428,
+			"name": "view all",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "ea910857-cf51-bfe5-d398-d75982961f3a",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/chapters/create",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "audiobook_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "collection_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465450959461,
+			"name": "create",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		},
+		{
+			"id": "f5496359-d2ad-60bd-684b-34552626d9de",
+			"headers": "",
+			"url": "http://localhost/audiobook_api/public/api/v1/admin/categories/create",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subtitle",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "picture_url",
+					"value": "Android-SuperUser.jpg",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "about",
+					"value": "Lorem Ipsum",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "parent_id",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1465316156705,
+			"name": "create",
+			"description": "",
+			"collectionId": "bc43fb0a-1c5b-f156-53d0-04d2e8d0970f",
+			"responses": []
+		}
+	]
+}

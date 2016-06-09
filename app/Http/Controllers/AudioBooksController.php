@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
-
+use App\Libraries\General;
 use App\AudioBook;
+use App\Category;
+use App\User;
 use App\Utils\ApiUtils;
 use App\Utils\ResponseUtil;
 use Illuminate\Routing\Controller;
@@ -18,6 +20,9 @@ class AudioBooksController extends Controller
      *
      * @return Response
      */
+	public function __construct(){
+        $this->general = New General;
+    }
     public function index()
     {
         return ResponseUtil::json(ApiUtils::getList(AudioBook::query()));
@@ -48,9 +53,50 @@ class AudioBooksController extends Controller
      */
     public function viewall()
     {	
-        $audioBook = ApiUtils::getList(AudioBook::query());
-		if(isset($audioBook)){
-			$result = ResponseUtil::json($audioBook,'berhasil','success');
+        $audioBook = ApiUtils::getList(AudioBook::query())->ToArray();
+		$arr_val = array();
+		foreach($audioBook as $val){
+			$audiobook = 'audiobook';
+			$audio_file_url = $val['audio_file_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$val['audio_file_url'] : '';
+			$audio_preview_file_url = $val['audio_preview_file_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$val['audio_preview_file_url'] : '';
+			$cover_picture_url = $val['cover_picture_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$val['cover_picture_url'] : '';
+			$banner_picture_url = $val['banner_picture_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$val['banner_picture_url'] : '';
+			
+			$data_category = Category::findorFail($val['category_id']);
+			$categories = 'categories';
+			$url_pic = $data_category['picture_url'] != NULL ? $this->general->url_api_path().$categories.'/'.$data_category['picture_url'] : '';
+			$val_categories[] = array('id'=>$data_category['id'],
+								 'title'=>$data_category['title'],	
+								 'subtitle'=>$data_category['subtitle'],	
+								 'picture_url'=>$url_pic,	
+								 'about'=>$data_category['about'],	
+								); 
+			$data_user = User::findorFail($val['publisher_id']);	
+			
+			$arr_val[] = array('id'=>$val['id'],
+							 'title'=>$val['title'],	
+							 'subtitle'=>$val['subtitle'],	
+							 'author'=>$val['author'],	
+							 'narrator'=>$val['narrator'],	
+							 'isbn'=>$val['isbn'],	
+							 'price'=>$val['price'],	
+							 'about'=>$val['about'],	
+							 'audio_file_url'=>$audio_file_url,	
+							 'audio_preview_file_url'=>$audio_preview_file_url,	
+							 'duration_seconds'=>$val['duration_seconds'],	
+							 'cover_picture_url'=>$cover_picture_url,	
+							 'banner_picture_url'=>$banner_picture_url,	
+							 'copyright_year'=>$val['copyright_year'],	
+							 'visibility'=>$val['visibility'],	
+							 'released_at'=>$val['released_at'],
+							 'category_id'=>$val_categories,	
+							 'publisher_id'=>$data_user,
+							 'updated_at'=>$val['updated_at'],	
+							);  
+			
+		}
+		if(isset($arr_val)){
+			$result = ResponseUtil::json($arr_val,'berhasil','success');
 			
 		}else{
 			$result = ResponseUtil::json('','tidak ada data','failed',201);
@@ -60,13 +106,53 @@ class AudioBooksController extends Controller
 	
 	public function show($id)
     {
-		$data_audioBook = AudioBook::find($id);
-		if(isset($data_audioBook)){
-			$res = ApiUtils::get(AudioBook::query(), $id);
-			$result = ResponseUtil::json($res,'berhasil','success');
-			
-		}else{
+		//$data_audioBook = AudioBook::find($id)->ToArray();
+		$data_audioBook = ApiUtils::get(AudioBook::query(), $id)->ToArray();
+		if(!isset($data_audioBook)){
 			$result = ResponseUtil::json('','tidak ada data','failed',201);
+		}else{
+			$audiobook = 'audiobook';
+			$audio_file_url = $data_audioBook['audio_file_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$data_audioBook['audio_file_url'] : '';
+			$audio_preview_file_url = $data_audioBook['audio_preview_file_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$data_audioBook['audio_preview_file_url'] : '';
+			$cover_picture_url = $data_audioBook['cover_picture_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$data_audioBook['cover_picture_url'] : '';
+			$banner_picture_url = $data_audioBook['banner_picture_url'] != NULL ? $this->general->url_api_path().$audiobook.'/'.$data_audioBook['banner_picture_url'] : '';
+			
+			$data_category = Category::findorFail($data_audioBook['category_id']);
+			$categories = 'categories';
+			$url_pic = $data_category['picture_url'] != NULL ? $this->general->url_api_path().$categories.'/'.$data_category['picture_url'] : '';
+			$val_categories[] = array('id'=>$data_category['id'],
+								 'title'=>$data_category['title'],	
+								 'subtitle'=>$data_category['subtitle'],	
+								 'picture_url'=>$url_pic,	
+								 'about'=>$data_category['about'],	
+								); 
+			$data_user = User::findorFail($data_audioBook['publisher_id']);			
+			$arr_val[] = array('id'=>$data_audioBook['id'],
+								 'title'=>$data_audioBook['title'],	
+								 'subtitle'=>$data_audioBook['subtitle'],	
+								 'author'=>$data_audioBook['author'],	
+								 'narrator'=>$data_audioBook['narrator'],	
+								 'isbn'=>$data_audioBook['isbn'],	
+								 'price'=>$data_audioBook['price'],	
+								 'about'=>$data_audioBook['about'],	
+								 'audio_file_url'=>$audio_file_url,	
+								 'audio_preview_file_url'=>$audio_preview_file_url,	
+								 'duration_seconds'=>$data_audioBook['duration_seconds'],	
+								 'cover_picture_url'=>$cover_picture_url,	
+								 'banner_picture_url'=>$banner_picture_url,	
+								 'copyright_year'=>$data_audioBook['copyright_year'],	
+								 'visibility'=>$data_audioBook['visibility'],	
+								 'released_at'=>$data_audioBook['released_at'],	
+								 'category_id'=>$val_categories,	
+								 'publisher_id'=>$data_user,	
+								 'updated_at'=>$data_audioBook['updated_at'],	
+								); 
+			if(isset($arr_val)){			
+				$result = ResponseUtil::json($arr_val,'berhasil','success');
+				
+			}else{
+				$result = ResponseUtil::json('','tidak ada data','failed',201);
+			}			
 		}
         return $result;
     }
@@ -86,6 +172,7 @@ class AudioBooksController extends Controller
 		$audioBook->copyright_year 	 = Input::get('copyright_year');
 		$audioBook->visibility 		 = Input::get('visibility');
 		$audioBook->released_at 	 = Input::get('released_at');
+		$audioBook->category_id 	 = Input::get('category_id');
 		$audioBook->publisher_id 	 = Input::get('publisher_id');
 		$audioBook->save();
 		if(isset($audioBook)){
@@ -95,7 +182,7 @@ class AudioBooksController extends Controller
 				$files = Input::file('audio_file_url');
 				$ext   = $files->getClientOriginalExtension();
 				$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-				$path = public_path().'/assets/upload/'.$audiobooks.'/';
+				$path =  $this->general->url_api_path().$audiobooks.'/';
 				$moved = $files->move($path, $filename);
 				if(isset($moved)){
 					$audioBook->audio_file_url = $filename;
@@ -108,7 +195,7 @@ class AudioBooksController extends Controller
 				$files = Input::file('audio_preview_file_url');
 				$ext   = $files->getClientOriginalExtension();
 				$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-				$path = public_path().'/assets/upload/'.$audiobooks.'/';
+				$path =  $this->general->url_api_path().$audiobooks.'/';
 				$moved = $files->move($path, $filename);
 				if(isset($moved)){
 					$audioBook->audio_preview_file_url = $filename;
@@ -121,7 +208,7 @@ class AudioBooksController extends Controller
 				$files = Input::file('cover_picture_url');
 				$ext   = $files->getClientOriginalExtension();
 				$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-				$path = public_path().'/assets/upload/'.$audiobooks.'/';
+				$path =  $this->general->url_api_path().$audiobooks.'/';
 				$moved = $files->move($path, $filename);
 				if(isset($moved)){
 					$audioBook->cover_picture_url = $filename;
@@ -134,7 +221,7 @@ class AudioBooksController extends Controller
 				$files = Input::file('banner_picture_url');
 				$ext   = $files->getClientOriginalExtension();
 				$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-				$path = public_path().'/assets/upload/'.$audiobooks.'/';
+				$path =  $this->general->url_api_path().$audiobooks.'/';
 				$moved = $files->move($path, $filename);
 				if(isset($moved)){
 					$audioBook->banner_picture_url = $filename;
@@ -164,6 +251,7 @@ class AudioBooksController extends Controller
 			$data_audioBook->copyright_year 	= ( Input::get('copyright_year') ? Input::get('copyright_year') : $data_audioBook->copyright_year ); 
 			$data_audioBook->visibility 		= ( Input::get('visibility') ? Input::get('visibility') : $data_audioBook->visibility ); 
 			$data_audioBook->released_at 		= ( Input::get('released_at') ? Input::get('released_at') : $data_audioBook->released_at ); 
+			$data_audioBook->category_id 		= ( Input::get('category_id') ? Input::get('category_id') : $data_audioBook->category_id ); 
 			$data_audioBook->publisher_id 		= ( Input::get('publisher_id') ? Input::get('publisher_id') : $data_audioBook->publisher_id ); 
 			$data_audioBook->updated_at 		=  date('Y-m-d H:i:s');
 			$data_audioBook->save();
@@ -174,7 +262,7 @@ class AudioBooksController extends Controller
 					$files = Input::file('audio_file_url');
 					$ext   = $files->getClientOriginalExtension();
 					$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-					$path = public_path().'/assets/upload/'.$audiobooks.'/';
+					$path = $this->general->url_api_path().$audiobooks.'/';
 					$moved = $files->move($path, $filename);
 					if(isset($moved)){
 						$data_audioBook->audio_file_url = $filename;
@@ -187,7 +275,7 @@ class AudioBooksController extends Controller
 					$files = Input::file('audio_preview_file_url');
 					$ext   = $files->getClientOriginalExtension();
 					$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-					$path = public_path().'/assets/upload/'.$audiobooks.'/';
+					$path =  $this->general->url_api_path().$audiobooks.'/';
 					$moved = $files->move($path, $filename);
 					if(isset($moved)){
 						$data_audioBook->audio_preview_file_url = $filename;
@@ -200,7 +288,7 @@ class AudioBooksController extends Controller
 					$files = Input::file('cover_picture_url');
 					$ext   = $files->getClientOriginalExtension();
 					$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-					$path = public_path().'/assets/upload/'.$audiobooks.'/';
+					$path =  $this->general->url_api_path().$audiobooks.'/';
 					$moved = $files->move($path, $filename);
 					if(isset($moved)){
 						$data_audioBook->cover_picture_url = $filename;
@@ -213,7 +301,7 @@ class AudioBooksController extends Controller
 					$files = Input::file('banner_picture_url');
 					$ext   = $files->getClientOriginalExtension();
 					$filename = date('YmdHis').rand(0000,99999).'.'.$ext;
-					$path = public_path().'/assets/upload/'.$audiobooks.'/';
+					$path =  $this->general->url_api_path().$audiobooks.'/';
 					$moved = $files->move($path, $filename);
 					if(isset($moved)){
 						$data_audioBook->banner_picture_url = $filename;
@@ -262,7 +350,7 @@ class AudioBooksController extends Controller
 		if(isset($audiobook)){
 			$audiobook->delete();
 			//restore();
-			$result = ResponseUtil::json('','berhasil','success');
+			$result = ResponseUtil::json($audiobook,'berhasil','success');
 			
 		}else{
 			$result = ResponseUtil::json('','tidak ada data','failed',201);
