@@ -40,6 +40,7 @@ return [
     */
 
     'url' => 'http://localhost/audiobook_api/',
+	'url_api' => 'http://localhost/audiobook_api/',
 
     /*
     |--------------------------------------------------------------------------
