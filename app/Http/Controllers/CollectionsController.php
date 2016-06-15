@@ -118,7 +118,7 @@ class CollectionsController extends Controller
 			$collections = 'collections';
 			$picture_url = $data_collection['picture_url'] != NULL ? $this->general->url_api_path().$collections.'/'.$data_collection['picture_url'] : '';
 			
-			$arr_val[] = array('id'=>$data_collection['id'],
+			$arr_val = array('id'=>$data_collection['id'],
 								 'title'=>$data_collection['title'],	
 								 'subtitle'=>$data_collection['subtitle'],	
 								 'about'=>$data_collection['about'],	
